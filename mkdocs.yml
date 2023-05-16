@@ -1,0 +1,92 @@
+# Project information
+site_name: My Docs
+site_description: 
+site_author: wanghao
+site_url: https://wanghao.github.io/
+
+
+# Repository
+repo_name: 'thewanghao/wanghao.github.io'
+repo_url: 'https://github.com/thewanghao/wanghao.github.io/'
+
+# Copyright
+copyright: "Copyright &copy; 2023 - 2024 hao Wang"
+
+
+theme:
+  name: material
+  palette:
+    primary: 'deep purple'
+    accent: 'deep purple'
+
+  feature:
+    tabs: true
+
+  #font:
+    #text: 'Ubuntu'
+    #code: 'Ubuntu Mono'
+  
+  favicon: 'docs/images/favicon.ico'
+
+  language: 'zh'
+
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/thewanghao
+
+  search:
+    language: 'ja'
+
+#  disqus: 'thewanghao'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+
+# Google Analytics
+#google_analytics:
+#  - "UA-156919721-1"
+#  - "auto"
+
+
+edit_uri:
+
+plugins:
+  - search
+
+nav:
+  - 我的笔记:
+      - 1.介绍: index.md
+      - 2.配置 YAML 文件: 配置 YAML 文件.md
+      - 2.Reference: Reference.md
