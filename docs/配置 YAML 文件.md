@@ -325,17 +325,14 @@ extra:
 
 ##### 社交关系
 
-在文档的页脚中链接社交帐户。`type`必须表示类型，例如`github`，`twitter`或者`linkedin`，`link`必须包含要链接的网址，例如：
+在文档的页脚中链接社交帐户。`link`必须包含要链接的网址，例如：
 
 ```yaml
 extra:
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github-alt
       link: 'https://github.com/xxxx'
-    - type: 'twitter'
-      link: 'https://twitter.com/xxxx'
-    - type: 'linkedin'
-      link: 'https://www.linkedin.com/in/xxxx'
+
 ```
 
 
@@ -459,7 +456,7 @@ theme:
 # Customization
 extra:
   social:
-    - type: github
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/Derrors
 
   search:
