@@ -3,7 +3,7 @@ site_name: My Docs
 site_description: 
 site_author: wanghao
 site_url: https://wanghao.github.io/
-
+edit_uri:
 
 # Repository
 repo_name: 'thewanghao/wanghao.github.io'
@@ -34,7 +34,7 @@ theme:
 # Customization
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/thewanghao
 
   search:
@@ -79,8 +79,6 @@ extra_javascript:
 #  - "UA-156919721-1"
 #  - "auto"
 
-
-edit_uri:
 
 plugins:
   - search

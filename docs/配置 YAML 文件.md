@@ -330,7 +330,7 @@ extra:
 ```yaml
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: 'https://github.com/xxxx'
 
 ```
@@ -456,7 +456,7 @@ theme:
 # Customization
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/Derrors
 
   search:
