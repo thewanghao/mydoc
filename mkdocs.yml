@@ -2,12 +2,12 @@
 site_name: My Docs
 site_description: 
 site_author: wanghao
-site_url: https://wanghao.github.io/
+site_url: https://thewanghao.github.io/mydoc/
 edit_uri:
 
 # Repository
-repo_name: 'thewanghao/wanghao.github.io'
-repo_url: 'https://github.com/thewanghao/wanghao.github.io/'
+repo_name: 'thewanghao/mydoc'
+repo_url: 'https://github.com/thewanghao/mydoc/'
 
 # Copyright
 copyright: "Copyright &copy; 2023 - 2024 hao Wang"
