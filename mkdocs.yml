@@ -15,18 +15,28 @@ copyright: "Copyright &copy; 2023 - 2024 hao Wang"
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     primary: 'deep purple'
     accent: 'deep purple'
 
-  feature:
-    tabs: true
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
 
-  #font:
-    #text: 'Ubuntu'
-    #code: 'Ubuntu Mono'
-  
-  favicon: 'docs/images/favicon.ico'
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - navigation.top
+    - navigation.instant
+
+  favicon: 'docs/img/favicon.ico'
 
   language: 'zh'
 
@@ -37,8 +47,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/thewanghao
 
-  search:
-    language: 'ja'
 
 #  disqus: 'thewanghao'
 
@@ -54,24 +62,52 @@ markdown_extensions:
   - footnotes
   - meta
   - def_list
-  - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
-  - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_png
-  - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.blocks.admonition:
+      types:
+      - new
+      - settings
+      - note
+      - abstract
+      - info
+      - tip
+      - success
+      - question
+      - warning
+      - failure
+      - danger
+      - bug
+      - example
+      - quote
+  - pymdownx.blocks.details:
+  - pymdownx.blocks.definition:
+  - pymdownx.blocks.tab:
+      alternate_style: True
 
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  - 'https://polyfill.io/v3/polyfill.min.js?features=es6'
+  - 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
 
 
 # Google Analytics
@@ -81,10 +117,14 @@ extra_javascript:
 
 
 plugins:
-  - search
+  - search:
+      lang:
+        -en
+        -ja
 
 nav:
   - 我的笔记:
       - 1.介绍: index.md
       - 2.配置 YAML 文件: 配置 YAML 文件.md
-      - 2.Reference: Reference.md
+      - 3.添加giscus: Comment with Giscus.md
+      - 4.Reference: Reference.md

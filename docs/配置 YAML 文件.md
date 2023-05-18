@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 #### 项目信息
 
 * site_name
@@ -507,13 +511,8 @@ plugins:
   - search
 
 nav:
-  - 基于 Material for MkDocs 搭建静态网页: 
-      - 介绍: 介绍.md
-      - 安装 Mkdocs && Material: 安装 Mkdocs && Material.md
-      - 创建新项目: 创建新项目.md
+  - test: 
       - 配置 YAML 文件: 配置 YAML 文件.md
-      - 开发服务器并生成网页: 开发服务器并生成网页.md
-      - 将网页部署到 GitHub Pages: 将网页部署到 GitHub Pages.md
       - Reference: Reference.md
 ```
 
